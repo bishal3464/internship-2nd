@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BISHAL'S LOGO.COM</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #a43ab2;
+            --secondary: #11113d;
+            --accent: #f1c40f;
+            --dark: #1a2a44;
+            --text-light: #777;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            position: absolute;
+            width: 100%;
+            padding: 30px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .logo span {
+            font-weight: 300;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.7;
+        }
+
+        .sign-in {
+            background: var(--accent);
+            color: #222 !important;
+            padding: 8px 22px;
+            border-radius: 25px;
+            font-weight: 600;
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            position: relative;
+        }
+
+        .hero-text {
+            flex: 1;
+            z-index: 10;
+            margin-top: 60px;
+        }
+
+        .hero-text h3 {
+            color: var(--accent);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text h1 {
+            font-size: 96px;
+            font-weight: 900;
+            line-height: 0.95;
+            color: var(--dark);
+            margin-bottom: 25px;
+        }
+
+        .hero-text p {
+            max-width: 460px;
+            font-size: 16px;
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 42px;
+            border-radius: 40px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            background: linear-gradient(90deg, #6a3093, #21518b);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+        }
+
+        /* ================= HERO IMAGE ================= */
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            z-index: 5;
+        }
+
+        .illustration-mock {
+            width: 90%;
+            margin-bottom: 50px;
+            filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+        }
+
+        /* ================= BACKGROUNDS ================= */
+        .space-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 60%;
+            background: radial-gradient(circle at top right, #25256b, transparent 70%);
+            z-index: 0;
+        }
+
+        .wave-container {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .wave-svg {
+            width: 100%;
+            height: auto;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background: #33577f;
+            color: #fff;
+            padding: 10px 10%;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .footer-content p {
+            color: #ccc;
+            font-size: 15px;
+        }
+
+        .footer-content a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #222;
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 992px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 160px;
+            }
+
+            .hero-text h1 {
+                font-size: 64px;
+            }
+
+            .hero-text p {
+                margin: 0 auto 30px;
+            }
+
+            .hero-image {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">B<span>LOGO</span></div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="sign-in">Sign in</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="space-bg"></div>
+
+<div class="wave-container">
+    <svg viewBox="0 0 1440 800" class="wave-svg" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H1440V400C1440 400 1200 700 800 500C400 300 0 600 0 600V0Z"
+              fill="url(#grad)"/>
+        <defs>
+            <linearGradient id="grad" x1="0" y1="0" x2="1440" y2="600">
+                <stop stop-color="#a43ab2"/>
+                <stop offset="1" stop-color="#11113d"/>
+            </linearGradient>
+        </defs>
+    </svg>
+</div>
+
+<main class="hero">
+    <div class="hero-text">
+        <h3>Lorem Ipsum</h3>
+        <h1>WEB<br>DESIGN</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed sit amet augue ligula. Nunc vel sem sed tortor hendrerit aliquet.
+        </p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <div class="hero-image">
+        <svg class="illustration-mock" viewBox="0 0 500 400">
+            <rect x="100" y="250" width="300" height="10" rx="5" fill="#ddd"/>
+            <rect x="150" y="150" width="180" height="100" rx="10" fill="#222"/>
+            <circle cx="420" cy="300" r="80" fill="#d980fa"/>
+        </svg>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <h3>Contact</h3>
+        <p>
+            Email:
+            <a href="mailto:sm4595310@gmail.com">sm4595310@gmail.com</a>
+        </p>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 YourLOGO. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>
